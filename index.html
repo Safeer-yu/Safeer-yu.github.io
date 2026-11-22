@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Safeer Al-Yubary · Data Scientist</title>
+  <meta name="description" content="Safeer Al-Yubary, data scientist working on NLP, LLM applications and machine learning. Based in Al Ain, UAE.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Sections">
+    <a class="nav-name" href="#top">Safeer Al-Yubary</a>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="btn btn-small" href="resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- Intro -->
+  <section class="hero wrap">
+    <p class="eyebrow">Al Ain, UAE · open to roles</p>
+    <h1>Safeer Al-Yubary</h1>
+    <p class="lede">Data scientist working on NLP, LLM applications and machine learning, from RAG and agentic pipelines to training and evaluating models.</p>
+    <div class="hero-links">
+      <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download resume (PDF)</a>
+      <a class="link" href="https://github.com/Safeer-yu" target="_blank" rel="noopener">GitHub</a>
+      <a class="link" href="https://www.linkedin.com/in/safeer-al-yubary" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="link" href="mailto:s.alyubary@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section wrap">
+    <h2>About</h2>
+    <p>MS in Data Science. Research Assistant at UAE University (Dept. of Cognitive Science), where I build text-processing pipelines and train and evaluate language models.</p>
+    <p>I build end-to-end LLM applications, from retrieval and agents to deployment on AWS, with bilingual Arabic/English work as one of my strengths.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section wrap">
+    <h2>Featured projects</h2>
+    <div class="cards">
+
+      <article class="card">
+        <h3>Wuduh: bilingual RAG chatbot for UAE labor law</h3>
+        <p>Answers labor-law questions in Arabic and English, grounded in the official legal text. RAG pipeline built from scratch, covering chunking, embedding, retrieval and reranking. Deployed as a Docker container on AWS ECS (Fargate).</p>
+        <p class="result"><strong>Evaluation:</strong> 92% accuracy on a 30-question bilingual evaluation set; 0% hallucination rate on adversarial “trap” questions.</p>
+        <ul class="chips" aria-label="Stack">
+          <li>Python</li><li>LangChain</li><li>GPT-4o</li><li>ChromaDB</li><li>Docker</li><li>AWS ECS Fargate</li>
+        </ul>
+        <p class="card-links">
+          <a href="https://github.com/Safeer-yu/Wuduh" target="_blank" rel="noopener">Repo</a>
+          <span class="todo">[CHECK: demo link]</span>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Book Summarizer: multi-agent LLM pipeline <span class="tag">In progress</span></h3>
+        <p>Takes a full book plus inputs (purpose, audience, length) and produces a summary tailored to them. Currently built and tested on Arabic books.</p>
+        <p><strong>Pipeline:</strong> OCR ingestion (Mistral OCR) → heading-aware chunking → map summaries → Profiler and Curator agents → hierarchical reduce.</p>
+        <p class="muted">Planned: a Verifier agent, an “abridged edition” mode, and an error audit across several books.</p>
+        <ul class="chips" aria-label="Stack">
+          <li>Multi-agent pipeline</li><li>Mistral OCR</li><li>Arabic</li>
+        </ul>
+        <p class="card-links">
+          <a href="https://github.com/Safeer-yu/arabic-book-summarizer" target="_blank" rel="noopener">Repo</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Large-scale word embeddings and semantic analysis</h3>
+        <p class="card-meta">Research · UAE University</p>
+        <p>Trained Word2Vec models on a ~1.9-billion-word Arabic corpus on the university HPC cluster, tuning parameters across multiple runs.</p>
+        <p>Used them to study the semantic coherence of Arabic root families: a root-extraction pipeline combining the Farasa stemmer and the Aralex lexical resource, then unweighted and frequency-weighted coherence scores from pairwise cosine similarity.</p>
+        <ul class="chips" aria-label="Stack">
+          <li>Word2Vec</li><li>HPC</li><li>Farasa</li><li>Aralex</li><li>Python</li>
+        </ul>
+        <p class="card-links">
+          <a href="https://github.com/Safeer-yu/Semantic-Coherence" target="_blank" rel="noopener">Repo</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Neural-network modelling of transposed-letter priming in Arabic</h3>
+        <p class="card-meta">Research</p>
+        <p>Neural-network simulations of the transposed-letter (TL) priming effect in Arabic, comparing transposed vs. substituted letter conditions and building on Lerner et al. (2014).</p>
+        <p>Models map letter identity, letter form (allography) and position inputs to orthographic or semantic (fastText) representations.</p>
+        <ul class="chips" aria-label="Stack">
+          <li>Neural networks</li><li>fastText</li><li>Cognitive modelling</li>
+        </ul>
+        <p class="card-links">
+          <span class="todo">[CHECK: links to be added]</span>
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Other work -->
+  <section id="other" class="section wrap">
+    <h2>Other work</h2>
+    <ul class="plain-list">
+      <li>
+        <strong>Why is Arabic hard for AI?</strong> <span class="tag">In progress</span>
+        An interactive explainer of tokenization, morphology, diacritics and dialects.
+        <span class="todo">[CHECK: link if live]</span>
+      </li>
+      <li>
+        <strong><a href="https://github.com/Safeer-yu/yemeni-nlp-hub" target="_blank" rel="noopener">Yemen NLP Hub</a></strong>
+        A curated, machine-readable catalog of datasets, models, tools, dictionaries and archives for the languages and dialects of Yemen.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section wrap">
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Data Scientist (Research Assistant) · UAE University</h3>
+        <p class="entry-meta">Mar 2024 – Present · Al Ain, UAE</p>
+      </div>
+      <ul>
+        <li>Build Python pipelines for data cleaning, preprocessing and analysis across Arabic NLP and cognitive linguistics research projects.</li>
+        <li>Design and run behavioral experiments using PsychoPy, managing both data collection and quantitative analysis.</li>
+        <li>Train and evaluate Word2Vec models to measure semantic similarity between Arabic roots and words.</li>
+        <li>Teaching assistant tasks alongside the research role: <span class="todo">[CHECK: e.g. labs, grading]</span></li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Conversational AI Engineer (Content Manager) · Voctiv</h3>
+        <p class="entry-meta">Jul 2021 – Dec 2023 · Remote</p>
+      </div>
+      <ul>
+        <li>Analyzed conversational AI performance using data analysis techniques, identifying areas for improvement and implementing strategies that improved accuracy.</li>
+        <li>Developed and managed datasets, including regular expressions (RegEx), to improve the AI’s natural-language comprehension and reduce error rates.</li>
+        <li>Trained AI algorithms through iterative testing and refinement, achieving a 10% performance improvement.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section wrap">
+    <h2>Education</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Master’s degree in Data Science · Higher School of Economics University</h3>
+        <p class="entry-meta">June 2023 · Moscow, Russia</p>
+      </div>
+      <p class="muted">Scholarship recipient · GPA 7.7/10.0</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Bachelor’s degree in Mechatronics · Bauman Moscow State Technical University</h3>
+        <p class="entry-meta">June 2020 · Moscow, Russia</p>
+      </div>
+      <p class="muted">Scholarship recipient · GPA 3.9/5.0</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section wrap">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <div>
+        <dt>ML / LLMs</dt>
+        <dd>Python, PyTorch, Hugging Face, LangChain, LangGraph, RAG, multi-agent pipelines, OpenAI API, Anthropic API, Word2Vec / fastText, scikit-learn, pandas, NumPy, SQL</dd>
+      </div>
+      <div>
+        <dt>NLP</dt>
+        <dd>Text preprocessing pipelines, word embeddings, evaluation design, Arabic morphology (Farasa, Aralex), bilingual Arabic/English systems, spaCy, NLTK, RegEx</dd>
+      </div>
+      <div>
+        <dt>Deployment</dt>
+        <dd>Docker, AWS ECS Fargate / App Runner, FastAPI, Streamlit, HPC clusters, Git</dd>
+      </div>
+      <div>
+        <dt>Languages</dt>
+        <dd>Arabic (native), English (fluent, IELTS 7.0), Russian (fluent)</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section wrap">
+    <h2>Contact</h2>
+    <p>Open to data science, NLP and LLM-engineering roles.</p>
+    <ul class="contact-list">
+      <li><span>Email</span><a href="mailto:s.alyubary@gmail.com">s.alyubary@gmail.com</a></li>
+      <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/safeer-al-yubary" target="_blank" rel="noopener">linkedin.com/in/safeer-al-yubary</a></li>
+      <li><span>GitHub</span><a href="https://github.com/Safeer-yu" target="_blank" rel="noopener">github.com/Safeer-yu</a></li>
+      <li><span>Resume</span><a href="resume.pdf" target="_blank" rel="noopener">resume.pdf</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer wrap">
+  <p>© 2026 Safeer Al-Yubary</p>
+</footer>
+
+</body>
+</html>
