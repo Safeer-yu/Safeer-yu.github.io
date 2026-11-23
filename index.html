@@ -26,7 +26,7 @@
 
   <!-- Intro -->
   <section class="hero wrap">
-    <p class="eyebrow">Al Ain, UAE · open to roles</p>
+    <p class="eyebrow">Al Ain, UAE · Open to data science, NLP and ML engineering roles</p>
     <h1>Safeer Al-Yubary</h1>
     <p class="lede">Data scientist working on NLP, LLM applications and machine learning, from RAG and agentic pipelines to training and evaluating models.</p>
     <div class="hero-links">
@@ -52,23 +52,21 @@
       <article class="card">
         <h3>Wuduh: bilingual RAG chatbot for UAE labor law</h3>
         <p>Answers labor-law questions in Arabic and English, grounded in the official legal text. RAG pipeline built from scratch, covering chunking, embedding, retrieval and reranking. Deployed as a Docker container on AWS ECS (Fargate).</p>
-        <p class="result"><strong>Evaluation:</strong> 92% accuracy on a 30-question bilingual evaluation set; 0% hallucination rate on adversarial “trap” questions.</p>
+        <p class="result"><strong>Evaluation:</strong> 92% accuracy on a 30-question bilingual evaluation set.</p>
         <ul class="chips" aria-label="Stack">
           <li>Python</li><li>LangChain</li><li>GPT-4o</li><li>ChromaDB</li><li>Docker</li><li>AWS ECS Fargate</li>
         </ul>
         <p class="card-links">
           <a href="https://github.com/Safeer-yu/Wuduh" target="_blank" rel="noopener">Repo</a>
-          <span class="todo">[CHECK: demo link]</span>
         </p>
       </article>
 
       <article class="card">
-        <h3>Book Summarizer: multi-agent LLM pipeline <span class="tag">In progress</span></h3>
-        <p>Takes a full book plus inputs (purpose, audience, length) and produces a summary tailored to them. Currently built and tested on Arabic books.</p>
-        <p><strong>Pipeline:</strong> OCR ingestion (Mistral OCR) → heading-aware chunking → map summaries → Profiler and Curator agents → hierarchical reduce.</p>
-        <p class="muted">Planned: a Verifier agent, an “abridged edition” mode, and an error audit across several books.</p>
+        <h3>Arabic Book Summarizer: agentic LLM workflow <span class="tag">In progress</span></h3>
+        <p>Turns long Arabic books into textbook-style summaries tailored to a reader profile (audience, purpose, length, style, focus) while preserving the eloquence of the original Arabic (balagha).</p>
+        <p><strong>Workflow:</strong> ingestion → profiler → balagha preservation → chunk summaries → curation → hierarchical composition, each step a role-specific LLM call.</p>
         <ul class="chips" aria-label="Stack">
-          <li>Multi-agent pipeline</li><li>Mistral OCR</li><li>Arabic</li>
+          <li>Python</li><li>LLMs</li><li>Arabic NLP</li>
         </ul>
         <p class="card-links">
           <a href="https://github.com/Safeer-yu/arabic-book-summarizer" target="_blank" rel="noopener">Repo</a>
@@ -76,12 +74,13 @@
       </article>
 
       <article class="card">
-        <h3>Large-scale word embeddings and semantic analysis</h3>
+        <h3>Semantic coherence of Arabic root families</h3>
         <p class="card-meta">Research · UAE University</p>
-        <p>Trained Word2Vec models on a ~1.9-billion-word Arabic corpus on the university HPC cluster, tuning parameters across multiple runs.</p>
-        <p>Used them to study the semantic coherence of Arabic root families: a root-extraction pipeline combining the Farasa stemmer and the Aralex lexical resource, then unweighted and frequency-weighted coherence scores from pairwise cosine similarity.</p>
+        <p>How closely related in meaning are Arabic words that share a root? Built a ~1.9-billion-word Arabic corpus, cleaned it, and extracted roots by combining Farasa stems with the Aralex lexicon. Words sharing a root were grouped into families.</p>
+        <p>Trained Word2Vec models on the university HPC cluster and scored each family’s semantic coherence from pairwise cosine similarity (unweighted and frequency-weighted).</p>
+        <p class="muted">Next <span class="tag">In progress</span>: a lexical decision megastudy with human participants, testing whether root-family coherence affects how quickly Arabic words are recognized.</p>
         <ul class="chips" aria-label="Stack">
-          <li>Word2Vec</li><li>HPC</li><li>Farasa</li><li>Aralex</li><li>Python</li>
+          <li>Python</li><li>Arabic NLP</li><li>Word2Vec</li><li>HPC</li><li>Farasa</li><li>Aralex</li>
         </ul>
         <p class="card-links">
           <a href="https://github.com/Safeer-yu/Semantic-Coherence" target="_blank" rel="noopener">Repo</a>
@@ -89,16 +88,13 @@
       </article>
 
       <article class="card">
-        <h3>Neural-network modelling of transposed-letter priming in Arabic</h3>
-        <p class="card-meta">Research</p>
-        <p>Neural-network simulations of the transposed-letter (TL) priming effect in Arabic, comparing transposed vs. substituted letter conditions and building on Lerner et al. (2014).</p>
-        <p>Models map letter identity, letter form (allography) and position inputs to orthographic or semantic (fastText) representations.</p>
+        <h3>Transposed-letter priming and allography in Arabic: neural-network simulations <span class="tag">In progress</span></h3>
+        <p class="card-meta">Research · UAE University</p>
+        <p>Investigates whether the transposed-letter (TL) priming effect in Arabic is modulated by allography, since Arabic letters change shape depending on their position in the word.</p>
+        <p>Built neural-network simulations that compare transposed vs. substituted letter primes, with inputs encoding letter identity, letter form and position, mapped to orthographic or semantic representations. Results are still being analyzed.</p>
         <ul class="chips" aria-label="Stack">
-          <li>Neural networks</li><li>fastText</li><li>Cognitive modelling</li>
+          <li>Python</li><li>Neural networks</li><li>Cognitive modelling</li>
         </ul>
-        <p class="card-links">
-          <span class="todo">[CHECK: links to be added]</span>
-        </p>
       </article>
 
     </div>
@@ -111,7 +107,6 @@
       <li>
         <strong>Why is Arabic hard for AI?</strong> <span class="tag">In progress</span>
         An interactive explainer of tokenization, morphology, diacritics and dialects.
-        <span class="todo">[CHECK: link if live]</span>
       </li>
       <li>
         <strong><a href="https://github.com/Safeer-yu/yemeni-nlp-hub" target="_blank" rel="noopener">Yemen NLP Hub</a></strong>
@@ -133,13 +128,13 @@
         <li>Build Python pipelines for data cleaning, preprocessing and analysis across Arabic NLP and cognitive linguistics research projects.</li>
         <li>Design and run behavioral experiments using PsychoPy, managing both data collection and quantitative analysis.</li>
         <li>Train and evaluate Word2Vec models to measure semantic similarity between Arabic roots and words.</li>
-        <li>Teaching assistant tasks alongside the research role: <span class="todo">[CHECK: e.g. labs, grading]</span></li>
+        <li>Supported teaching as an assistant by hosting lab experiment sessions and grading student work.</li>
       </ul>
     </div>
 
     <div class="entry">
       <div class="entry-head">
-        <h3>Conversational AI Engineer (Content Manager) · Voctiv</h3>
+        <h3>Content Manager (Conversational AI) · Voctiv</h3>
         <p class="entry-meta">Jul 2021 – Dec 2023 · Remote</p>
       </div>
       <ul>
@@ -159,7 +154,7 @@
         <h3>Master’s degree in Data Science · Higher School of Economics University</h3>
         <p class="entry-meta">June 2023 · Moscow, Russia</p>
       </div>
-      <p class="muted">Scholarship recipient · GPA 7.7/10.0</p>
+      <p class="muted">Scholarship recipient</p>
     </div>
 
     <div class="entry">
@@ -167,7 +162,7 @@
         <h3>Bachelor’s degree in Mechatronics · Bauman Moscow State Technical University</h3>
         <p class="entry-meta">June 2020 · Moscow, Russia</p>
       </div>
-      <p class="muted">Scholarship recipient · GPA 3.9/5.0</p>
+      <p class="muted">Scholarship recipient</p>
     </div>
   </section>
 

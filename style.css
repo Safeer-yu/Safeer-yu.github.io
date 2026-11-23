@@ -129,6 +129,10 @@ p { margin: 0 0 0.75rem; }
   border-radius: 0 6px 6px 0;
 }
 
+.steps { margin: 0 0 0.75rem; padding-left: 1.1rem; font-size: 0.95rem; }
+.steps li { margin-bottom: 0.3rem; }
+.steps li::marker { color: var(--accent); }
+
 .card-links {
   margin-top: auto;
   padding-top: 0.5rem;
